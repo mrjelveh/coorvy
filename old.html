@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Admin Panel">
+    <meta name="keywords" content="Admin,Panel,Template,JavaScript">
+    <meta name="author" content="MohammadReza Jelveh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--/ meta tags-->
+
+    <!--styling css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--/styling css-->
+
+    <title>C O O R V Y</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light top-nav">
+    <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark toggle-btn">
+            <i class="lni-menu"></i>
+        </button>
+    </div>
+</nav>
+<div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+
+        <ul class="p-0 components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="icon lni-home"></i>
+                    <span>داشبورد</span>
+                </a>
+                <ul class="collapse p-0" id="homeSubmenu">
+                    <li>
+                        <a href="#">داشبورد 1</a>
+                    </li>
+                    <li>
+                        <a href="#">داشبورد 2</a>
+                    </li>
+                    <li>
+                        <a href="#">داشبورد 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="components.html">
+                    <i class="icon lni-layout"></i>
+                    <span>پوسته</span>
+                </a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="icon lni-more-alt"></i>
+                    <span>صفحه ها</span>
+                </a>
+                <ul class="collapse p-0" id="pageSubmenu">
+                    <li>
+                        <a href="#">فرم ها</a>
+                    </li>
+                    <li>
+                        <a href="#">تیبل ها</a>
+                    </li>
+                    <li>
+                        <a href="#">صفحه سوم</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon lni-layers"></i>
+                    <span>داکیومنت</span>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="p-0 CTAs">
+            <p>اینجا</p>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+    </div>
+
+    <!--closing layer-->
+    <div class="overlay"></div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

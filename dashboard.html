@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Admin Panel">
+    <meta name="keywords" content="Admin,Panel,Template,JavaScript">
+    <meta name="author" content="MohammadReza Jelveh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--/ meta tags-->
+
+    <!--styling css-->
+    <!--<link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />-->
+    <link rel="stylesheet" href="css/darkly/bootstrap2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--/styling css-->
+
+    <title>C O O R V Y</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light top-nav">
+    <div class="">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark toggle-btn">
+            <i class="lni-menu"></i>
+        </button>
+    </div>
+</nav>
+<div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+
+        <div class="admin-avatar text-center">
+            <div class="justify-content-center row mb-3">
+                <img class="avatar rounded-circle" src="http://i.pravatar.cc/120" alt="">
+            </div>
+
+            <h5>حامد جوادین</h5>
+            <div class="row justify-content-center mt-3">
+                <a href="#" class="btn nothing ti-Line-Open"></a>
+            </div>
+        </div>
+        <ul class="p-0 components">
+            <li class="active">
+                <a href="#">
+                    <i class="icon lni-layout"></i>
+                    <span>داشبورد</span>
+                </a>
+            </li>
+            <li>
+                <a href="actors.html">
+                    <i class="icon ti-Line-Clapper"></i>
+                    <span>بازیگران</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="icon ti-Line-File-20"></i>
+                    <span>سناریو</span>
+                </a>
+                <ul class="collapse p-0" id="pageSubmenu">
+                    <li>
+                        <a href="#">فعال</a>
+                    </li>
+                    <li>
+                        <a href="#">غیر فعال</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon ti-Line-People-1"></i>
+                    <span>کاربران</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon ti-Line-Download-1"></i>
+                    <span>لیست داده های ورودی</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="row box mx-1 overflow-hidden">
+                        <div class="col-lg-4 col-md-3 col-sm-12 bg-warning d-flex align-items-center justify-content-center">
+                            <span class="f35 ti-Line-Film-strip"></span>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12 rtl py-1 text-right">
+                            <h4>50</h4>
+                            <p>تعداد بازیگران</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="row box mx-1 overflow-hidden">
+                        <div class="col-lg-4 col-md-3 col-sm-12 bg-info d-flex align-items-center justify-content-center">
+                            <span class="f35 ti-Line-Film-roll"></span>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12 rtl py-1 text-right">
+                            <h4>300</h4>
+                            <p>ویدیوهای ارسالی</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="row box mx-1 overflow-hidden">
+                        <div class="col-lg-4 col-md-3 col-sm-12 bg-danger d-flex align-items-center justify-content-center">
+                            <span class="f35 ti-Line-People-1"></span>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12 rtl py-1 text-right">
+                            <h4>10000</h4>
+                            <p>کاربران</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="row box mx-1 overflow-hidden">
+                        <div class="col-lg-4 col-md-3 col-sm-12 bg-primary d-flex align-items-center justify-content-center">
+                            <span class="f35 ti-Line-Film-strip"></span>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12 rtl py-1 text-right">
+                            <h4>بازیگران</h4>
+                            <p>بازیگران</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="box">
+                        <div class="box-content">
+                            <h4 class="text-center">تغییر رمز</h4>
+                            <form class="mt-3">
+                                <div class="form-group rtl">
+                                    <label for="currentpass">رمز عبور فعلی</label>
+                                    <input type="password" class="form-control form-placeholder-rtl" id="currentpass" placeholder="رمز عبور فعلی">
+                                </div>
+                                <div class="form-group rtl">
+                                    <label for="newpass">رمز عبور جدید</label>
+                                    <input type="password" class="form-control form-placeholder-rtl" id="newpass" placeholder="رمز عبور جدید">
+                                </div>
+                                <div class="form-group rtl">
+                                    <label for="newpassrep">تکرار رمز عبور جدید</label>
+                                    <input type="password" class="form-control form-placeholder-rtl" id="newpassrep" placeholder="تکرار رمز عبور جدید">
+                                </div>
+                                <button type="submit" class="btn btn-primary">تغییر رمز</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="box">
+                        <div class="box">
+                            <div class="box-content">
+                                <h4 class="text-center">تغییر اطلاعات</h4>
+                                <form class="mt-3">
+                                    <div class="form-group">
+                                        <label for="nameinput">نام</label>
+                                        <input type="text" class="form-control" id="nameinput" placeholder="نام">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="familyinput">نام خانوادگی</label>
+                                        <input type="text" class="form-control" id="familyinput" placeholder="نام خانوادگی">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">ایمیل</label>
+                                        <input type="email" class="form-control form-placeholder-rtl" id="email" placeholder="ایمیل">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">آدرس</label>
+                                        <textarea rows="2"type="email" class="form-control" id="address" placeholder="آدرس"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">تغییر اطلاعات</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--closing layer-->
+    <div class="overlay"></div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

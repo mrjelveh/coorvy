@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Admin Panel">
+    <meta name="keywords" content="Admin,Panel,Template,JavaScript">
+    <meta name="author" content="MohammadReza Jelveh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--/ meta tags-->
+
+    <!--styling css-->
+    <link rel="stylesheet" href="css/darkly/bootstrap2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--/styling css-->
+
+    <title>C O O R V Y</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light top-nav">
+    <div class="">
+        <button type="button" id="sidebarCollapse" class="btn btn-dark toggle-btn">
+            <i class="lni-menu"></i>
+        </button>
+    </div>
+</nav>
+<div class="wrapper">
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+
+        <div class="admin-avatar text-center">
+            <div class="justify-content-center row mb-3">
+                <img class="avatar rounded-circle" src="http://i.pravatar.cc/120" alt="">
+            </div>
+
+            <h5>حامد جوادین</h5>
+            <div class="row justify-content-center mt-3">
+                <a href="#" class="btn nothing ti-Line-Open"></a>
+            </div>
+        </div>
+        <ul class="p-0 components">
+            <li>
+                <a href="dashboard.html">
+                    <i class="icon lni-layout"></i>
+                    <span>داشبورد</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class="icon ti-Line-Clapper"></i>
+                    <span>بازیگران</span>
+                </a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="icon ti-Line-File-20"></i>
+                    <span>سناریو</span>
+                </a>
+                <ul class="collapse p-0" id="pageSubmenu">
+                    <li>
+                        <a href="#">فعال</a>
+                    </li>
+                    <li>
+                        <a href="#">غیر فعال</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon ti-Line-People-1"></i>
+                    <span>کاربران</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="icon ti-Line-Download-1"></i>
+                    <span>لیست داده های ورودی</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <div class="container mt-3">
+            <div class="box">
+                <div class="box-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12"><h3 class="text-xl-right text-lg-right text-md-right text-center">لیست بازیگران</h3></div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <form>
+                                    <div class="form-row align-items-center">
+                                        <div class="col-10 my-1">
+                                            <input type="text" class="form-control" id="searchactors" placeholder="جستجو">
+                                        </div>
+                                        <div class="col-2 my-1">
+                                            <button type="submit" class="btn btn-secondary"><span class="lni-search"></span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5 responsive-table">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>اسامی بازیگران</th>
+                                <th>سناریوها</th>
+                                <th>وضعیت</th>
+                                <th>نمایش اکانت</th>
+                            </tr>
+                            <tr>
+                                <td>هومن سیدی</td>
+                                <td>2</td>
+                                <td><span class="badge badge-pill badge-warning">نامعلوم</span></td>
+                                <td>
+                                    <button class="btn btn-light">نمایش <span class="lni lni-question-circle"></span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>صابر ابر</td>
+                                <td>3</td>
+                                <td><span class="badge badge-pill badge-success">هستش</span></td>
+                                <td><button class="btn btn-light">نمایش <span class="lni lni-question-circle"></span></button></td>
+                            </tr>
+                            <tr>
+                                <td>پیمان معادی</td>
+                                <td>4</td>
+                                <td><span class="badge badge-pill badge-danger">نیستش رفته</span></td>
+                                <td><button class="btn btn-light">نمایش <span class="lni lni-question-circle"></span></button></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="container-fluid">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link" aria-label="Previous">
+                                    <span class="lni-chevron-right"></span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link">4</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="javascript:void(0);" class="page-link" aria-label="Next">
+                                    <span class="lni-chevron-left"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--closing layer-->
+    <div class="overlay"></div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
