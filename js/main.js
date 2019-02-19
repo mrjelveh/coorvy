@@ -40,3 +40,4 @@ $(document).ready(function () {
             });
         });
     });
+new SimpleBar($('#sidebar')[0],{forceVisible: 'y'});
